@@ -8,10 +8,17 @@ Dependencies
 
 This sample code depends on the requests library, which can be found at: http://docs.python-requests.org/en/latest/
 
-If you have pip installed, you can add requests to your environment with:
+The library will automatically be installed by pip.
 
-pip install requests
+Installation
+============
 
+Use pip to install from the git repository.
+
+```bash
+$ cd python_rest_api_client
+$ pip install .
+```
 
 Functionality
 =============
