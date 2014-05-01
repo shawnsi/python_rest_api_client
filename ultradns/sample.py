@@ -7,7 +7,7 @@ from __future__ import print_function
 
 __author__ = 'Jon Bodner'
 
-import ultra_rest_client
+from ultradns import ultra_rest_client
 import sys
 
 if len(sys.argv) != 5 and len(sys.argv) != 3:

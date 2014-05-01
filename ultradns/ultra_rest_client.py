@@ -4,9 +4,8 @@
 # product names, company names, marks, logos and symbols may be trademarks
 # of their respective owners.
 __author__ = 'Jon Bodner'
-import connection
+from ultradns import connection
 import json
-import urllib
 
 
 class RestApiClient:
