@@ -10,7 +10,7 @@ import urllib
 
 
 class RestApiClient:
-    def __init__(self, username, password, use_http=False, host="restapi.ultradns.com"):
+    def __init__(self, username, password, use_http=False, host="restapi.ultradns.com", verify=True):
         """Initialize a Rest API Client.
 
         Arguments:
@@ -22,7 +22,7 @@ class RestApiClient:
         host -- Allows you to point to a server other than the production server.
 
         """
-        self.rest_api_connection = connection.RestApiConnection(use_http, host)
+        self.rest_api_connection = connection.RestApiConnection(use_http, host, verify)
         self.rest_api_connection.auth(username, password)
 
     # Zones
